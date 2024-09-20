@@ -1,0 +1,277 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  list-style: none;
+}
+body{
+  background: grey;
+}
+.container{
+  display: flex;
+  width: 1200px;
+  margin: auto;
+}
+nav{
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  background: white;
+  width: 280px;
+  overflow: hidden;
+  box-shadow: 0 20px 35px black;
+}
+.navbar{
+    width: 80%;
+    margin: 0 auto;
+}
+.logo{
+  text-align: center;
+  display: flex;
+  margin: 2rem 0 1rem 0;
+  padding-bottom: 3rem;
+  align-items: center;
+}
+.logo img{
+  width: 50px;
+  height: 45px;
+  border-radius: 50%;
+}
+.logo h1{
+    text-transform: uppercase;
+    margin-left: 1rem;
+}
+.logo span{
+  font-weight: bold;
+  padding-left: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+ul{
+    margin: 0 auto;
+}
+li{
+     padding-bottom: 2rem;
+}
+li a{
+    font-size: 16px;
+    color: black;
+
+}
+.logout{
+    position: absolute;
+    bottom: 20px;
+}
+a{
+  position: relative;
+  color: white;
+  font-size: 14px;
+  display: table;
+  width: 280px;
+  padding: 10px;
+}
+nav .fas{
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 14px;
+  font-size: 20px;
+  text-align: center;
+}
+.nav-item{
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+}
+nav i{
+    width: 50px;
+    font-size: 18px;
+    text-align: center;
+}
+a:hover{
+  background: gray;
+}
+.logout{
+  position: absolute;
+  bottom: 0;
+}
+.main{
+  width: 100%;
+}
+.main-top{
+  display: flex;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgb(43, 43, 43);
+}
+.main-body{
+    padding: 10px 10px 10px 20px;
+}
+h1{
+    margin: 20px 10px;
+}
+.search_bar{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+.search_bar input{
+    width: 50%;
+    padding: 10px;
+    border: 1px solid gainsboro;
+}
+.search_bar input:focus{
+    border: 1px solid black;
+}
+.search_bar select{
+    border: 1px solid gainsboro;
+    padding: 10px;
+    margin-left: 2rem;
+}
+.search_bar .filter{
+    width: 300px;
+
+}
+.tags_bar{
+    width: 55%;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+.tag{
+    background: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    cursor: pointer;
+}
+.tag i{
+    margin-right: 0.7rem;
+}
+.row{
+    display: flex;
+    padding: 10px;
+    margin-top: 1.3rem;
+    justify-content: space-between;
+}
+.row p{
+    color: black;
+    font-size: 18px;
+}
+.row a{
+    color: black;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.row p span{
+    color: black;
+}
+.main-top i{
+  position: absolute;
+  right: 0;
+  margin: 10px 30px;
+  color: grey;
+  cursor: pointer;
+}
+.main-skills{
+  display: flex;
+  margin-top: 20px;
+}
+.main-skills .card{
+  width: 25%;
+  margin: 10px;
+  background: white;
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 20px 35 black;
+}
+.main-skills .card h3{
+  margin: 10px;
+  text-transform: capitalize;
+}
+.main-skills .card p{
+  font-size: 12px;
+}
+.main-skills .card button{
+  background: orangered;
+  color: white;
+  padding: 7px 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.main-skills .card button:hover{
+  background: rgba(223, 70, 15, 0.856);
+}
+.main-skills .card i{
+  font-size: 22px;
+  padding: 10px;
+}
+.main-course{
+  margin-top:20px ;
+  text-transform: capitalize;
+}
+.job_card{
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    border-radius: 10px;
+    background: white;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    border: 1px solid gainsboro;
+    box-shadow: 0 20px 30px black;
+}
+.job_details{
+    display: flex;
+}
+.job_details .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.job_details .img i{
+    width: 70px;
+    font-size: 3rem;
+    margin-left: 1rem;
+    padding: 10px;
+    color: violet;
+    background: gray;
+}
+.job_details .text{
+    margin-left: 2.3rem;
+}
+.job_details .text span{
+    color: gray;
+}
+.job_salary{
+    text-align: right;
+    color: gray;
+}
+.job_card:active{
+    border: 2px solid black;
+    transition: 0.4s;
+
+}
+footer{
+    color: black;
+    background-color: gray;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+}
